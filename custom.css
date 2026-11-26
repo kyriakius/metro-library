@@ -1,0 +1,104 @@
+:root {
+  /* Crimson Accent */
+  --bs-primary: #9e1b32;
+  --bs-primary-rgb: 158, 27, 50;
+  --bs-link-color: #9e1b32;
+  --bs-link-hover-color: #7a1224;
+
+  /* Alabaster & Ink Text */
+  --bs-body-bg: #faf9f6;
+  --bs-body-color: #1a1a1a;
+  --bs-secondary-color: #595959;
+  --bs-border-color: #dfdcd5;
+
+  /* Black for Footer & Dark Elements */
+  --bs-dark: #141414;
+  --bs-dark-rgb: 20, 20, 20;
+}
+
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #dfdcd5;
+}
+
+.navbar-brand {
+  color: #1a1a1a;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+}
+
+.nav-link {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #9e1b32;
+}
+
+.btn-primary {
+  --bs-btn-bg: #9e1b32;
+  --bs-btn-border-color: #9e1b32;
+  --bs-btn-hover-bg: #7a1224;
+  --bs-btn-hover-border-color: #7a1224;
+  --bs-btn-active-bg: #5e0d1b;
+  --bs-btn-active-border-color: #5e0d1b;
+  border-radius: 2px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
+.card {
+  --bs-card-bg: #ffffff;
+  --bs-card-border-color: #dfdcd5;
+  border-radius: 2px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1, h2, h3, .card-title, .navbar-brand {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  font-size: 1.35rem;
+}
+
+.btn-responsive {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn-responsive {
+    width: auto;
+    align-self: flex-start;
+  }
+}
+
+/* Responsive map sizing & corners */
+.library-map {
+  height: 320px;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .library-map {
+    height: 440px;
+    border-radius: 0;
+  }
+}
+
+/* Floating "Show My Location" button inside the map */
+.map-locate-btn {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 1000;
+  border: 1px solid #dfdcd5;
+}
